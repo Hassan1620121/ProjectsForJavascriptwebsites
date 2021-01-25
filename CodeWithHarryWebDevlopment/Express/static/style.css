@@ -1,0 +1,67 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body::before {
+    opacity: 0.5;
+    content:"";
+    height: 1000px;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+    position: absolute;
+    background: url('/static/rodrigo-sarsfield-2mz9IKab7DE-unsplash.jpg') no-repeat center center;
+}
+nav {
+    background-color: rgb(44, 44, 44);
+    padding: 13px 15px;
+
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+li {
+    list-style:none;
+    padding: 3px 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+p {
+    text-align: center;
+}
+.container {
+    
+    margin: 65px auto;
+    color: white;
+    /* background-color: yellow; */
+    max-width: 70%;
+}
+input,textarea{
+    display: block;
+    padding: 6px;
+    margin: 10px auto;
+    width: 60%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.btn {
+    margin: 3px auto;
+    display:block;
+    padding:12px 20px;
+    background-color: orangered;
+    color:white;
+    border-radius: 3px;
+    border:2px solid brown;
+    outline:none;
+    cursor: pointer;
+}

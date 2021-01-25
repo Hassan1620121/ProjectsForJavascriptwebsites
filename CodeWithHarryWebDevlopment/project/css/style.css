@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background:url('/img/bgimg.jpg');
+    height: 4544px;
+    background-repeat: no-repeat;
+    
+}
+.left {
+    border:2px solid red;
+}
+.right {
+    
+}
+.mid {
+
+}

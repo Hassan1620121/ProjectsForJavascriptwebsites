@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media QUeries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+
+            ;
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer'
+
+                ;
+
+            }
+
+            aside {
+                display: none;
+            }
+            span {
+            display:block;
+            text-align: center;
+        }
+
+        }
+
+        @media (min-width: 500px) and (max-width: 800px) {
+            body {
+                background-color: rgb(39, 177, 91);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+
+                    'footer footer footer footer'
+
+                ;
+            }
+            span {
+            display:block;
+            text-align: center;
+        }
+        }
+
+        @media only screen and (min-width: 800px) {
+            body {
+                background-color: darkorange;
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+
+        nav {
+            grid-area: navbar;
+
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>about us</span>
+            <span>Services</span>
+
+            <span>contact us</span>
+
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Hindi</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam nisi alias odit vel ad earum iure id doloremque optio corrupti, tenetur illum facilis dolorem itaque laborum est omnis ea. Quos mollitia obcaecati soluta eius maiores? Quasi iure ipsam possimus quod architecto ipsa nihil maxime quis beatae omnis! Atque accusamus corporis deserunt libero natus, autem, ullam fuga laborum laudantium nisi dolorem rerum quae. Quas beatae consequatur reiciendis et fuga, delectus ipsam facere, tempora tenetur laboriosam excepturi hic id molestias itaque non, numquam omnis eveniet temporibus odio harum quo aperiam iste ad. Explicabo suscipit vitae sapiente est eum corporis laborum dignissimos at?</p>
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+        </aside>
+
+
+    </div>
+    <footer class="bdr">Copyright code with harry All rights Reserved.2020</footer>
+</body>
+
+</html>

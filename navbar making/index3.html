@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #header {
+            background-color: rgb(199, 187, 187);
+            display: flex;
+            justify-content: center;
+        }
+
+        .navBar {
+            overflow:hidden;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .navBar a {
+            
+            font-size: 17px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+
+        }
+
+       
+        
+
+        
+
+        
+
+        
+
+       
+
+
+        
+
+        .dropdown2 {
+            overflow: hidden;
+            display: flex;
+        }
+
+        .dropdown2 .dropbtn2 {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 16px 18px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown2:hover,
+        .dropbutton2:hover {
+            background-color: red;
+        }
+
+        .dropdown2-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 75px;
+            border-radius: 5px;
+        }
+
+        .dropdown2-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown2-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown2:hover .dropdown2-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">
+            <img style="width: 10%; padding: 0px;" src="img/logo01.png" alt="">
+        </div>
+        <div class="navBar">
+            <a href="home">Home</a>
+            <a href="home">About Us</a>
+            <li><div class="dropdown2">
+                <button class="dropbtn2">Solutions
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown2-content">
+                    <a href="">Microsoft</a>
+                    <a href="">Microsoft D365</a>
+                    <a href="">Microsoft Power Automate</a>
+                    <a href="">Microsoft 365</a>
+                    <a href="">Microsoft Dynamics AX</a>
+                    <a href="">Other</a>
+                    <a href="">Docu Sign</a>
+                    
+
+                </div>
+            </div></li>
+            <div class="dropdown2">
+                <button class="dropbtn2">Managed Services
+                    
+                </button>
+                <div class="dropdown2-content">
+                    <a href="">Managed IT Services</a>
+                    <a href="">Managed Websites</a>
+                    <a href="">IT Support</a>
+                    <a href="">Azure Managed Services</a>
+                    <a href="">IT Consultancy</a>
+                    <a href="">Microsoft 365 Support</a>
+                    <a href="">Professional Services</a>
+                    <a href="">Microsoft D365 FO Support</a>
+                    <a href="">Microsoft 365 CE Support</a>
+                    <a href="">Microsoft Dynamics AX Support</a>
+
+                </div>
+            </div>
+            <div class="dropdown2">
+                <button class="dropbtn2">Innovative Services
+                </button>
+                <div class="dropdown2-content">
+                    <a href="">Content Writing</a>
+                    <a href="">Web Development</a>
+                    <a href="">Graphic Design</a>
+                    <a href="">Digital Marketing</a>
+                    <a href="">SEO</a>
+
+                </div>
+            </div>
+            <div class="dropdown2">
+                <button class="dropbtn2">Resources
+                </button>
+                <div class="dropdown2-content">
+                    <a href="">Blog</a>
+                    <a href="">Articles</a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>

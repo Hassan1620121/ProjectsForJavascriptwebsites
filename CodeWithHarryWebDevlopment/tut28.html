@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container {
+            height:984px;
+            width:100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-direction:column;
+            flex-direction: row;
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            /* flex-wrap: wrap-reverse; */
+            flex-flow: column wrap;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;
+
+
+        }
+        .item {
+            width: 200px;
+            height: 200px;;
+            background-color:tomato;
+            border: 2px solid rgb(44, 238, 37);
+            margin: 10px;
+            padding: 3px;
+            
+        }
+        #item-1{
+            /* Flex properties for a flex ite  */
+            /* order: 1; */
+            flex-grow: 3;
+        }
+        #item-2{
+            /* order: 2; */
+            /* flex-grow: 2; */
+            flex-shrink: 3;
+            flex-basis: 120px;
+            /* when flex direction is row, flex basis will control width otherwise column height  */
+
+
+        }
+        #item-3{
+            /* order: 3; */
+            /* flex: 2 2 349004px; */
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: end;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>This is flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+
+</html>
+<!-- Properties for flex container
+I
+
+
+-->

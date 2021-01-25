@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops title</title>
+</head>
+
+<body>
+    <div class="container">
+        This is about containers
+    </div>
+
+    <script>
+        // console.log('Hello world');
+        // let i=0;
+        // for(i=0;i<3;i++){
+        //     console.log(i);
+        // }
+        let friends = ["hassan", "Ahsan", "saad"];
+        // for (let index = 0; index < friends.length; index++) {
+        //     let element = friends[index];
+        //     console.log('Hello friend, '+element);
+
+        // }
+        // friends.forEach(function f(element){
+        //     console.log("Hello friend, "+ element+ "To modern javascript");
+        // });
+        for (element of friends) {
+            console.log("Hello friend, " + element + " To modern javascript");
+        }
+        let employee = {
+            name: "Hassan",
+            universityDegree: "BBA",
+            GPA: 2.8,
+        }
+        // use this loop to iterater over objects in javascript 
+        // for ( key in employee) {
+        //     console.log(`The ${key} of employee is ${employee[key]}`);
+        // }
+        //While loop in js
+        // let i=4;
+        // while (i<45) {
+        //     console.log(`i is ${i}`)   
+        //     i++;
+
+        // }
+        let i = 1;
+        do {
+            i++
+            console.log(`i is ${i}`)
+        } while (i < 100);
+
+    </script>
+
+</body>
+
+</html>

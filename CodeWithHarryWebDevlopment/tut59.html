@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dates</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: springgreen;
+            border: 2px solid bisque;
+            text-align: center;
+            padding: 50px;
+            
+        }
+        #time {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        This is a container
+        current time is <span id="time"></span>
+    </div>
+    <script>
+        // console.log('This is date and time tutorial');
+        let now = new Date();
+        // console.log(now);
+        let dt = new Date(1000000000);
+        // console.log(dt);
+        let newDates = new Date("2029-09-30");
+        // console.log(newDates);
+        // let newDates = new Date(year, month, date, hours, minutes, seconds);
+        let newDateso = new Date(20000, 2, 6, 3, 32, 44);
+
+        // console.log(newDateso);
+        let yr = newDates.getFullYear();
+        console.log(`the year is ${yr}`);
+        let mon = newDates.getMonth();
+        console.log(`the month is ${mon}`);
+
+        let dat = newDates.getDate();
+        console.log(`the date is ${dat}`);
+
+        let hor = newDates.getHours();
+        console.log(`the hour is ${hor}`);
+        newDates.setDate(8);
+        newDates.setMinutes(40);
+
+        console.log(newDates);
+
+
+        setInterval(upDateIime, 1000);
+        function upDateIime() {
+            time.innerHTML = new Date();
+            
+        }
+
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>
