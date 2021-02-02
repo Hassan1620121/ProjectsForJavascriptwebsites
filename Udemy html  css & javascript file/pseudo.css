@@ -1,0 +1,20 @@
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color: purple;
+}
+li:nth-last-child(2){
+    color: yellow;
+}
+input:focus{
+    border: 3px solid red;
+}
+p::first-line{
+    font-size: 35px;
+    color: red;
+}
+::selection {
+    color: red;
+    background-color: yellow;
+}

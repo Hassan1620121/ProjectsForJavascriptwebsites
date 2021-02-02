@@ -1,0 +1,8 @@
+img{
+    border: 1px solid red;
+    width: 500px;
+    height: 400px;
+    object-fit:contain;
+    object-position: center left;
+
+}

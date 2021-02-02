@@ -1,0 +1,75 @@
+:root{
+    --primary-color:blue;
+    --button-color:rgb(255, 174, 0);
+    --text-color:teal;
+}
+
+
+
+ul {
+    list-style-image:url('img/arrow.svg');
+    list-style-position:inside;
+}
+
+ol{
+    list-style-type:decimal;
+}
+li {
+    border: 2px solid brown;
+}
+table {
+    border:1px solid black;
+    border-collapse:collapse;
+    empty-cells:hide;
+    table-layout: fixed;
+    width: 100%;
+}
+th {
+    border: 1px solid green;
+    height:60px;
+    padding: 10px;
+    
+
+}
+td  {
+    border:2px solid blue;
+    height:20px;
+    padding:10px;
+}
+caption{
+    border:1px solid purple;
+    caption-side:bottom;
+}
+
+#function {
+    background-color: teal;
+    height: 200px;
+    width: calc(100% - 200px);
+    
+}
+a{
+    padding: 10px 30px;
+    margin: 20px;
+    background-color: rgb(255, 174, 0);
+    color: var(--text-color);
+    text-decoration: none;
+}
+a:hover {
+    background-color: teal;
+    color:var(--button-color);
+}
+
+#div1 {
+    width: 600px;
+    height: 150px;
+    background-color: blueviolet;
+}
+#div2 {
+    height: 150px;
+    width: 600px;
+    background-color: chocolate;
+    padding: 100px;
+    border: 100px solid black;
+    box-sizing:border-box;
+}
+

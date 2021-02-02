@@ -1,0 +1,10 @@
+:root {
+    --blackColor:#1A1A26;
+    --whiteColor:#fff;
+}
+.iconsize {
+    width: 64px;
+}
+.iconsize2 {
+    width: 32px;
+}

@@ -1,0 +1,106 @@
+/* 
+block
+inline
+inline-block
+none
+//Blocks
+div 
+p
+h1-h6
+form
+address
+artile
+canvas
+div
+figcaption
+main 
+section
+tfoot
+video
+blockquote
+dd
+dl
+fielfset
+figure
+form
+header
+li
+nav ol
+pre
+table
+ul
+ol
+
+
+//inline
+a
+acronym
+bdo
+br
+cite
+dfn
+i
+input
+label
+object q 
+script
+small
+strong
+sup
+time
+var
+abbr
+b
+big
+button
+code
+em
+img
+kbd
+map output
+smap
+select
+span
+sub
+texarea
+tt
+img
+span
+
+
+
+
+ */
+
+
+ /* inlineblock */
+
+ /* 
+ jlj
+  */
+
+  /* block 
+  1.newline
+  2.fullwidth
+  heightandwidth */
+
+
+  /* inline
+  not new :start
+  no full widthhh
+  no heifght and width */
+
+  /* inline block 
+  takes width and height */
+
+  .display {
+      border: 1px solid red;
+      width: 49%;
+      height: 100px;
+      display: inline-block;
+  }
+#div1 {
+    /* display: none; */
+    visibility: hidden;
+}
+

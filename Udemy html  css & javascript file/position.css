@@ -1,0 +1,61 @@
+/* 1. static (default)-normal flow
+2. relative
+3. fixed
+4. absolute
+
+
+
+1.top
+2.bottom
+3.left
+4.right */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#parent {
+    /* border: 1px solid red; */
+    padding: 20px;
+    width: 50%;
+    margin: 20px;
+    position: relative;
+}
+#child-1 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    position: relative;
+    z-index:3;
+    
+    
+    
+}
+#child-2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: -50px;
+    
+    
+
+
+    
+}
+#child-3 {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: -100px;
+    z-index:-1;
+    
+    
+}

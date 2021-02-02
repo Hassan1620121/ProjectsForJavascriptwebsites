@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+li {
+    list-style: none;
+}
 
 
 /* ============ desktop view ============ */
@@ -20,11 +23,12 @@
 } */
 
 .navbar-color{
-    background-color: #1A1A26;
+    /* background-color: #1A1A26; */
+    position: fixed;
+    z-index:100;
+    top: 0px;
 }
-.head{
-    z-index:999;
-}
+
 #logo{
     width: 150px;
     height: auto;
@@ -53,7 +57,9 @@ a:hover {
 
 .IndexPageSection3Column2{
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/indexpage/sliderImage2.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('img/indexpage/sliderImage2.jpg') ;
+    background-size:cover;
+    background-position: center center;
     color: white;
      
 }
@@ -66,4 +72,26 @@ a:hover {
 
 .IndexPageSection3Column1Text{
     border: 3px solid black;
+}
+
+
+/* ===================clients section============ */
+.card-height   {
+    min-height: 400px;
+}
+
+
+
+/* =====================Footer=============== */
+#footer {
+    background-color: var(--blackColor);
+}
+.footerlinks {
+    color: #fff;
+}
+footer img {
+    width: 200px;
+}
+hr.new1 {
+    border-top:1px solid white
 }
